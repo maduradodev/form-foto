@@ -1,0 +1,148 @@
+html{
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+.uf {
+  padding: 9px;
+  border-radius: 10px;
+  height: 35px;
+  border: none;
+  box-shadow: inset 0 0.0625em 0.125em rgb(10 10 10 / 5%);
+}
+
+.send {
+padding: 20px 10px;
+width: 200px;
+background-color: #333;
+color: #FFF;
+text-transform: uppercase;
+text-align: center;
+display: block;
+margin-top: 10px;
+cursor: pointer;
+padding: 9px;
+border-radius: 10px;
+height: 35px;
+border: none;
+box-shadow: inset 0 0.0625em 0.125em rgb(10 10 10 / 5%);
+}
+
+body{
+  background-image: url('/Viatris/AssistFoto/img/bg.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'Epilogue', sans-serif;
+  max-width: 100%;
+  min-height: 100vh;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.main {
+  flex-grow: 1;
+  display: flex;
+  width: 100%;
+  min-width: 100%;
+  align-items:center;
+  justify-content: center;
+}
+
+.hidden{
+  display: none;
+}
+
+.hidden > *{
+  display: none!important;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  background-color: #FFF;
+  width: 100%;
+  box-shadow: 0.125rem 0.125rem 0.250rem rgba(51, 51, 51, 0.5);
+}
+
+.container{
+  width: 75%;
+}
+
+.row{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.column{
+  flex-basis: calc(100% / 2 - 2rem);
+  margin: 1rem;
+}
+
+.title{
+  color: #FFF;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+
+.button-container{
+  text-align:center;
+  margin-top: 1rem;
+}
+
+.button{
+  height: 3.625rem;
+  width: 11.25rem;
+  background-color: #FFF;
+  color: #703e97;
+  border-radius: 0.625rem;
+  font-size: 1.125rem;
+  display:flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-weight: bold;
+  border: 0;
+  margin:auto;
+  box-shadow: 0.125rem 0.125rem 0.250rem rgba(51, 51, 51, 0.5);
+}
+
+.button > *{
+  margin: .5rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .container{
+    width: 60%;
+  }
+
+  .row{
+    flex-direction: column;
+
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container{
+    width: 90%;
+  }
+
+  .row{
+    flex-direction: column;
+  }
+}
